@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import {fetchDataFromApi} from './utils/api'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import {getApiConfiguration,getGenres} from '../src/store/homeSlice'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 
@@ -15,7 +15,7 @@ import SearchResult from "./pages/searchResult/SearchResult"
 
 function App() {
   const dispatch = useDispatch()
-  const {url} = useSelector((state)=>state.home)
+  // const {url} = useSelector((state)=>state.home)
   
 
 
